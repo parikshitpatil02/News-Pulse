@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Pulse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+         <div class="main__nav flex container">
+            <a href="#" onclick="reload()">
+                <img class="company__logo" src="https://drive.google.com/uc?export=view&id=1z7PCtxISpVxbo1BS25XffNXHYgLMVJ3f" alt="Company Logo">
+            </a>
+
+            <div class="nav__links">
+                <ul class="flex">
+                    <li class="hover__link nav__item" id="ipl" onclick="onNavItemCLick('ipl')">IPL</li>
+                    <li class="hover__link nav__item" id="finance" onclick="onNavItemCLick('finance')">Finance</li>
+                    <li class="hover__link nav__item" id="politics" onclick="onNavItemCLick('politics')">Politics</li>
+                </ul>
+            </div>
+
+            <div class="search__bar flex">
+                <input id="search__text" type="text" class="news__input" placeholder="eg. Science">
+                <button class="search__button" id="search__button">Search</button>
+            </div>
+         </div>
+    </nav>
+
+    <main>
+        <div class="cards__container container flex" id="cards__container">
+            
+        </div>
+    </main>
+
+    <template id="template__newsCard">  
+        <div class="card">
+            <div class="card__header">
+                <img src="https://via.placeholder.com/400x200" alt="news image" id="news__img">
+            </div>
+            <div class="card__content">
+                <h3 id="news__title">This is the title</h3>
+                <h6 class="news__source" id="news__source">End Gadget 20/08/2000</h6>
+                <p class="news__desc" id="news__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id exercitationem atque labore aspernatur debitis culpa, doloribus quod excepturi vero voluptatum officiis quasi dolorem beatae nemo corporis. Ea magnam consequuntur est.</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>
